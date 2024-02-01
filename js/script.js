@@ -1,4 +1,4 @@
-
+console.log('script.js');
 const inputName = document.getElementById('input-name');
 const inputEmail = document.getElementById('input-email');
 const button = document.getElementById('button-kirim');
@@ -21,22 +21,3 @@ button.addEventListener('click', function () {
         emailError.innerText = "Silahkan Isi Email Terlebih Dahulu!"
     }
 })
-
-let currentIndex = 0;
-
-// declaire variabel to Control Slides
-const totalSlides = document.querySelectorAll('.slide').length;
-const slideWidth = document.querySelector('.slide').clientWidth;
-const slideContainer = document.getElementById('slides')
-
-function nextSlide() {
-    currentIndex = (currentIndex + 2) % totalSlides;
-    updateSlide();
-}
-
-function updateSlide() {
-    slideContainer.style.transform = 'translateX ($(-currenIndex *  slideWidth)px'
-}
-
-setInterval(nextSlide, 2500);
-
